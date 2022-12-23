@@ -7,7 +7,7 @@ if (inputLine != null)
     // Парсим введенное число
     int inputNumber = int.Parse(inputLine);
 
-    // Определяем остаток от деления на 2
+    // Определяем остаток от деления на 2 
     int outLine = inputNumber % 2;
     //
     if (outLine == 0)
