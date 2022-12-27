@@ -13,7 +13,8 @@ double[] GenArr(int len, int minV, int maxV)
     double[] arr = new double[len];
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i] = Convert.ToDouble(rnd.Next(minV, maxV + 1) / 10.0);
+        arr[i] = Math.Round((minV + rnd.NextDouble() * (maxV - minV)),2);
+
     }
     return arr;
 }
